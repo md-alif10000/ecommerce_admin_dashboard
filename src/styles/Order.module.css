@@ -1,0 +1,110 @@
+.order {
+  padding: 20px;
+ width: 100%;
+}
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.orderInfo,
+.customerInfo {
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: var(--shadow-around);
+  margin: 10px;
+  flex: 1;
+}
+.orderInfo h3,
+.customerInfo h3 {
+  display: block;
+  text-align: center;
+}
+.orderInfo > div,
+.customerInfo > div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.keyValue {
+  padding: 10px;
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: 5px;
+}
+.keyValue span:first-child {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.keyValue span:last-child {
+  align-self: flex-end;
+}
+
+
+.statusInfo{
+    width: 80%;
+    margin: 20px auto;
+    height: 150px;
+    border-radius: 20px;
+    background-color: var(--bg-secondary);
+    box-shadow: var(--shadow-around);
+}
+
+.cartInfo{
+    width: 100%;
+    max-width: 1000px;
+    background-color: var(--bg-secondary);
+    box-shadow: var(--shadow-around);
+    padding: 30px;
+    /* margin: 20px; */
+
+}
+.heading,.product{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary);
+}
+.heading span{
+    font-weight: 600;
+}
+.heading span ,.product span{
+   flex: 1;
+   text-align: center;
+}
+.heading span:nth-child(2),.product span:nth-child(2){
+    flex: 3;
+}
+.product img{
+    width: 80px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-around);
+    cursor: pointer;
+}
+.product img:hover{
+    transform: scale(1.02);
+}
+.cartTotal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+.cartTotal > div{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 50px;
+}
+.cartTotal > div >span:first-child{
+    font-weight: 500;
+}

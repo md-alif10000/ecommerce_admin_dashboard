@@ -1,0 +1,13 @@
+.categories{
+    padding: 5vw;
+    width: calc(100vw - 250px);
+}
+.wrapper{
+    border-radius: 10px;
+    box-shadow: var(--shasow-around);
+    background-color: var(--bg-secondary);
+    width: 100%;
+    padding: 3vw;
+    min-height: 70vh;
+
+}

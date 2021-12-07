@@ -1,0 +1,105 @@
+.product {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3vw;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--bg-secondary);
+    margin: 10px;
+    padding: 20px;
+}
+.reviews h3{
+    display: block;
+    text-align: center;
+    width: 100%;
+
+}
+.delete{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.delete:hover{
+    box-shadow: var(--shadow-around);
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    max-width: 500px;
+    border: 1px solid var(--gray);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    position: relative;
+}
+.review:hover{
+    box-shadow: var(--shadow-around);
+}
+.review h5{
+    padding: 5px;
+    margin: 0;
+}
+.review p{
+    font-size: 12px;
+}
+.review > div{
+    display: flex;
+}
+.review > div >div:first-child{
+    display: flex;
+}
+.review > div >div:first-child img{
+    height: 80px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+.review > div >div:first-child img:hover{
+    transform: scale(1.02);
+}
+
+
+@media screen and (max-width:1000px) {
+    .review > div{
+     display: flex;
+     flex-direction: column;
+    }
+    
+}
+
+
+
+@media screen and (max-width:700px) {
+    .review{
+        width: 100%;
+    }
+    
+}

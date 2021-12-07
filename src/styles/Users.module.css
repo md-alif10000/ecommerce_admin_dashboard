@@ -1,0 +1,9 @@
+.users {
+  width: 100%;
+  padding: 3vw;
+}
+.tablewrapper {
+  margin: 1vw auto;
+  width: 100%;
+  overflow: hidden;
+}
