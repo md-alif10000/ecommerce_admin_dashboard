@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/components/Sidebar.module.css";
-
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
 import ProductionQuantityLimitsIcon from "@mui/icons-material/ProductionQuantityLimits";
 import { Category, NotificationAdd, WbSunny } from "@mui/icons-material";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Close } from "@material-ui/icons";
 const Sidebar = ({ menuOpen, setMenuOpen }) => {
   const [width, setwidth] = useState(null);
@@ -138,6 +137,7 @@ const Sidebar = ({ menuOpen, setMenuOpen }) => {
             exact={true}
             to="/categories"
             activeClassName="isActive"
+            className={(navInfo) => (navInfo.isActive ? styles.active : "")}
           >
             <li>
               <span>
